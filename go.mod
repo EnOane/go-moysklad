@@ -1,4 +1,4 @@
-module github.com/arcsub/go-moysklad
+module github.com/EnOane/go-moysklad
 
 go 1.22.0
 
