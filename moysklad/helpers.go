@@ -261,6 +261,11 @@ func (nullValue NullValue[T]) isNull() bool {
 	return nullValue.null || nullValue.value == nil
 }
 
+// Get возвращает значение поля.
+func (nullValue NullValue[T]) Get() *T {
+	return nullValue.value
+}
+
 // getValue возвращает значение поля.
 func (nullValue NullValue[T]) getValue() T {
 	return Deref(nullValue.value)
