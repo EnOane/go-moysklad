@@ -79,6 +79,7 @@ type AssortmentPosition struct {
 	ExternalCode string         `json:"externalCode,omitempty"` // Внешний код сущности
 	Name         string         `json:"name,omitempty"`         // Наименование сущности
 	AccountID    string         `json:"accountId,omitempty"`    // ID учётной записи
+	PathName     string         `json:"pathName,omitempty"`     //
 	ID           string         `json:"id,omitempty"`           // ID сущности
 	Barcodes     Slice[Barcode] `json:"barcodes,omitempty"`     // Штрихкоды
 	raw          []byte         // сырые данные для последующей конвертации в нужный тип
